@@ -1,0 +1,100 @@
+// const articles = [
+//   {
+//     id: 1,
+//     title:
+//       "What has Germany done to inform and protect asylum seekers in the Covid-19 pandemic?",
+//     description: `In the beginning of November 2020, German Chancellor Angela Merkel announced a partial lockdown as a second wave of coronavirus swept across Germany. The new lockdown, which now looks set to last until the end of January, limits travelling and socializing and has closed bars, restaurants and cultural institutions. The public health ministry continues to emphasise the importance of social distancing, mask-wearing and proper personal hygiene.`,
+//     image:
+//       "https://apiwp.thelocal.com/wp-content/uploads/2021/01/4b0ac80960b859634317466cc73b3cee7cf84fbb974a030fb2a5a8b403f2a2f2-842x563.jpg",
+//     url: "https://www.thelocal.de/20210107/what-has-germany-done-to-inform-and-protect-asylum-seekers-in-the-covid-19-pandemic/",
+//   },
+//   {
+//     id: 2,
+//     title:
+//       "The Unaccounted Killer: Tracing the dots between toxic masculinity and femicide across four countries",
+//     description: `Blindfolded, determined and with a choreography and chant simple but strong enough to spread around the world: The collective “Las Tesis”, in the middle of anti-government protests, took to the streets of Santiago de Chile to shed light on another matter concerning inequality in the country. This time, the focus was on violence against women, including rape and femicide. Their performance was not delivered on just any day, but precisely on the 25th of November 2019, the International Day for the Elimination of Violence against Women. `,
+//     image:
+//       "https://blog.hostwriter.org/wp-content/uploads/2020/01/elvioladorerestu.jpg",
+//     url: "https://blog.hostwriter.org/the-unaccounted-killer-tracing-the-dots-between-toxic-masculinity-and-femicide-across-four-countries/",
+//   },
+//   {
+//     id: 3,
+//     title:
+//       "Discordant Civil-Military Relations: The Spanner in The Works of India's Military Modernization",
+//     description: `"Maarna nahi, maarna nahi!" (Don't hit, don't hit!), a faceless voice called out as the band of merry men trudged under the hot afternoon sun. Cries of "Allah-u-Akbar" and "Pakistan Zindabad!" rent the air as the troop marched on, fending off the excited villagers from their 'precious cargo'. Only one man did not join in the triumphant chanting. His brow bled and he was clad in overalls different from the fatigues donned by the Pakistani troopers as they bound and led him to an unmarked green truck.`,
+//     image:
+//       "https://static.tildacdn.com/tild3634-6539-4963-b930-616561306566/indian-flag-2644512_.jpg",
+//     url: "http://munduscollection2019.tilda.ws/tanushree",
+//   },
+// ];
+
+const projects = [
+  {
+    id: 1,
+    title: "Project 1",
+    description: "No description yet",
+    image: "./images/filler.png",
+    url: "#",
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    description: "No description yet",
+    image: "./images/filler.png",
+    url: "#",
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    description: "No description yet",
+    image: "./images/filler.png",
+    url: "#",
+  },
+];
+
+const projectList = document.getElementById("project-list");
+
+for (let i = 0; i < projects.length; i++) {
+  const project = projects[i];
+
+  if (i % 2 == 0) {
+    projectList.innerHTML += `<div class="bg-white mb-5 shadow-sm project">
+              <a href="${
+                "project.html?id=" + project["id"]
+              }" style="text-decoration: none; color: black">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <img src="${project["image"]}" class="project-image" />
+                </div>
+                <div class="col-lg-6 py-4 px-5 py-lg-3 px-lg-5">
+                  <h4>${project["title"]}</h4>
+                  <p class="project-description">
+                    ${project["description"]}
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>`;
+  } else {
+    projectList.innerHTML += `<div class="bg-white mb-5 shadow-sm project">
+              <a href="${
+                "project.html?id=" + project["id"]
+              }" style="text-decoration: none; color: black">
+              <div class="row">
+                <div class="col-lg-6 p-0 d-lg-none">
+                  <img src="${project["image"]}" class="project-image" />
+                </div>
+                <div class="col-lg-6 py-4 px-5">
+                  <h4>${project["title"]}</h4>
+                  <p class="project-description">
+                    ${project["description"]}
+                  </p>
+                </div>
+                <div class="col-lg-6 p-0 d-none d-lg-block">
+                  <img src="${project["image"]}" class="project-image" />
+                </div>
+              </div>
+              </a>
+            </div>`;
+  }
+}
