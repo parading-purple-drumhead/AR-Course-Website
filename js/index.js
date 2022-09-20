@@ -31,70 +31,88 @@
 const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "No description yet",
-    image: "./images/filler.png",
-    url: "#",
+    title: 'Project 1 - Around The World',
+    description: `This project was made as a part of the coursework in
+    CS 428 Virtual, Augmented and Mixed Reality,
+    instructed by
+    Dr. Andrew Johnson
+    at the University of Illinois at Chicago during the Fall 2022
+    semester. The aim of the project was to create two AR-based
+    knickknacks of two different attractions of our choice and
+    also display the local time and live weather of the
+    attractions. My choice of attractions for the knickknack were
+    Chicago's Cloud Gate and the United Center. Chicago is a city
+    I've always wanted to live in or at least visit, with seeing
+    The Bean being on my bucket list. Having been a Bulls fan ever
+    since I started watching basketball, attending a game at the
+    United Center is another bucket list activity.`,
+    image: './images/Screenshot_20220919-172106_2.jpg',
+    url: '#',
   },
-  {
-    id: 2,
-    title: "Project 2",
-    description: "No description yet",
-    image: "./images/filler.png",
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    description: "No description yet",
-    image: "./images/filler.png",
-    url: "#",
-  },
-];
+]
 
-const projectList = document.getElementById("project-list");
+const projectList = document.getElementById('project-list')
 
 for (let i = 0; i < projects.length; i++) {
-  const project = projects[i];
+  const project = projects[i]
 
-  if (i % 2 == 0) {
+  if (i == 1) {
     projectList.innerHTML += `<div class="bg-white mb-5 shadow-sm project">
               <a href="${
-                "project.html?id=" + project["id"]
+                'project.html?id=' + project['id']
               }" style="text-decoration: none; color: black">
               <div class="row">
                 <div class="col-lg-6 p-0">
-                  <img src="${project["image"]}" class="project-image" />
+                  <img src="${project['image']}" class="project-image" />
                 </div>
                 <div class="col-lg-6 py-4 px-5 py-lg-3 px-lg-5">
-                  <h4>${project["title"]}</h4>
+                  <h4>${project['title']}</h4>
                   <p class="project-description">
-                    ${project["description"]}
+                    ${project['description']}
                   </p>
                 </div>
               </div>
               </a>
-            </div>`;
+            </div>`
+    continue
+  }
+
+  if (i % 2 == 0) {
+    projectList.innerHTML += `<div class="bg-white mb-5 shadow-sm project">
+              <a href="./project1.html" style="text-decoration: none; color: black">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <img src="${project['image']}" class="project-image" />
+                </div>
+                <div class="col-lg-6 py-4 px-5 py-lg-3 px-lg-5">
+                  <h4>${project['title']}</h4>
+                  <p class="project-description">
+                    ${project['description']}
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>`
   } else {
     projectList.innerHTML += `<div class="bg-white mb-5 shadow-sm project">
               <a href="${
-                "project.html?id=" + project["id"]
+                'project.html?id=' + project['id']
               }" style="text-decoration: none; color: black">
               <div class="row">
                 <div class="col-lg-6 p-0 d-lg-none">
-                  <img src="${project["image"]}" class="project-image" />
+                  <img src="${project['image']}" class="project-image" />
                 </div>
                 <div class="col-lg-6 py-4 px-5">
-                  <h4>${project["title"]}</h4>
+                  <h4>${project['title']}</h4>
                   <p class="project-description">
-                    ${project["description"]}
+                    ${project['description']}
                   </p>
                 </div>
                 <div class="col-lg-6 p-0 d-none d-lg-block">
-                  <img src="${project["image"]}" class="project-image" />
+                  <img src="${project['image']}" class="project-image" />
                 </div>
               </div>
               </a>
-            </div>`;
+            </div>`
   }
 }
