@@ -10,7 +10,7 @@ const projects = {
   },
   2: {
     id: 2,
-    title: 'Project 2',
+    title: 'Project 2 - One More Cup of Coffee',
     description: 'No description yet',
     image: './images/filler.png',
     url: '#',
