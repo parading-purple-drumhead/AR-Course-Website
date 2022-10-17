@@ -46,7 +46,7 @@ const projects = [
     The Bean being on my bucket list. Having been a Bulls fan ever
     since I started watching basketball, attending a game at the
     United Center is another bucket list activity.`,
-    image: './images/Screenshot_20220919-172106_2.jpg',
+    image: './images/project1/Screenshot_20220919-172106_2.jpg',
     url: './project1.html',
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     The Bean being on my bucket list. Having been a Bulls fan ever
     since I started watching basketball, attending a game at the
     United Center is another bucket list activity.`,
-    image: './images/Screenshot_20220919-172106_2.jpg',
+    image: './images/project1/Screenshot_20220919-172106_2.jpg',
     url: './project2.html',
   },
 ]
