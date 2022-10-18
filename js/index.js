@@ -51,22 +51,19 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Project 2 - Around The World',
+    title: 'Project 2 - More Cup of Coffee',
     description: `This project was made as a part of the coursework in
     CS 428 Virtual, Augmented and Mixed Reality,
     instructed by
     Dr. Andrew Johnson
     at the University of Illinois at Chicago during the Fall 2022
-    semester. The aim of the project was to create two AR-based
-    knickknacks of two different attractions of our choice and
-    also display the local time and live weather of the
-    attractions. My choice of attractions for the knickknack were
-    Chicago's Cloud Gate and the United Center. Chicago is a city
-    I've always wanted to live in or at least visit, with seeing
-    The Bean being on my bucket list. Having been a Bulls fan ever
-    since I started watching basketball, attending a game at the
-    United Center is another bucket list activity.`,
-    image: './images/project1/Screenshot_20220919-172106_2.jpg',
+    semester. The aim of the project was to create a Virtual
+    Reality scene comprising a commercial kiosk of our choice. I
+    worked on it with my teammate,
+    Advait Pai.
+    Our choice of kiosk for the scene was a convenience store that
+    sells packaged food and stationery.`,
+    image: './images/project2/Cover.jpg',
     url: './project2.html',
   },
 ]
