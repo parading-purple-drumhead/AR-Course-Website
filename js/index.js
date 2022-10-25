@@ -66,6 +66,15 @@ const projects = [
     image: './images/project2/Cover.jpg',
     url: './project2.html',
   },
+  {
+    id: 3,
+    title: "Student's Choice - Microsoft Mesh",
+    description: `Mesh is Microsoft's innovation in contributing towards the Metaverse. It is a mixed-reality 
+    platform oriented towards cloud AR collaboration, that primarily facilitates holographic meetings, among 
+    other things.`,
+    image: './images/students-choice/Cover.jpg',
+    url: './students-choice.html',
+  },
 ]
 
 const projectList = document.getElementById('project-list')
