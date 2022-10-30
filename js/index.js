@@ -68,10 +68,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Student's Choice - Microsoft Mesh",
-    description: `Mesh is Microsoft's innovation in contributing towards the Metaverse. It is a mixed-reality 
-    platform oriented towards cloud AR collaboration, that primarily facilitates holographic meetings, among 
-    other things.`,
+    title: "Student's Choice - SculptrVR",
+    description: `SculptrVR is an open-world, cloud-based VR game that allows users to 
+    create 3D models and explore virtual worlds created by them and other users. The modelling 
+    is achieved via a combination of hand gestures and controller inputs.`,
     image: './images/students-choice/Cover.jpg',
     url: './students-choice.html',
   },
