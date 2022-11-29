@@ -68,17 +68,17 @@ const projects = [
   },
   {
     id: 3,
-    title: "Project 2 - Our House",
-    description: `SculptrVR is an open-world, cloud-based VR game that 
-    allows users to create 3D models and explore virtual worlds created 
-    by them and other users. The modeling is achieved via a combination 
-    of hand gestures and controller inputs. Available on multiple platforms 
-    like Steam, Windows, PlayStation and the Meta Quest, it allows users to 
-    sculpt in a VR world at a massive range of scale. It allows users to 
-    zoom in up to 10,000x, letting them make from the tiniest sculptures to 
-    Godzilla-sized stuff. It was developed using Unreal Engine, and is a 
-    voxel-based modeling system.`,
-    image: './images/students-choice/Cover.jpg',
+    title: "Project 3 - Our House",
+    description: `This project was made as a part of the coursework 
+    in CS 428 Virtual, Augmented and Mixed Reality, instructed by Dr. 
+    Andrew Johnson at the University of Illinois at Chicago during 
+    the Fall 2022 semester. The aim of the project was to create a 
+    Virtual Reality scene on a building scale, where we modified the 
+    atrium of the upcoming CDRLC building. I worked on it with my 
+    teammate, Advait Pai. Our choice of theme for the scene was 
+    Christmas and we put various Christmas decorations up in parts 
+    of the atrium.`,
+    image: './images/project3/Cover.jpg',
     url: './project3.html',
   },
   {
